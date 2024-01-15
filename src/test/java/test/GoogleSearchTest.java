@@ -28,13 +28,13 @@ public class GoogleSearchTest extends Base{
 	Boolean result;
 	try {
 		//Added comments
+		//Removed comments
 		result = GoogleSearch.SearchResult("Selenium");
 		Assert.assertTrue(result);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	
 	}
 	
 	@AfterMethod
