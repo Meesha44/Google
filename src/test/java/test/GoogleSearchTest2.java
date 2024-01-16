@@ -23,7 +23,7 @@ public class GoogleSearchTest2 extends Base{
 	}
 	
 	@Test
-	public void SearchResultTest()
+	public void ResultTest2()
 	{
 	Boolean result;
 	try {
