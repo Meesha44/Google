@@ -27,8 +27,7 @@ public class GoogleSearchTest extends Base{
 	{
 	Boolean result;
 	try {
-		//Added comments
-		//Removed comments
+		
 		result = GoogleSearch.SearchResult("Selenium");
 		Assert.assertTrue(result);
 	} catch (InterruptedException e) {
