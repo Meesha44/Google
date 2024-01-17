@@ -8,9 +8,10 @@ import org.testng.annotations.Test;
 import base.Base;
 import pages.GoogleSearchPage;
 
-public class GoogleSearchTest2 extends Base{
+public class GTest extends Base{
+	
 	GoogleSearchPage GoogleSearch;
-	public GoogleSearchTest2()
+	public GTest()
 	{
 		super();
 	}
@@ -23,18 +24,17 @@ public class GoogleSearchTest2 extends Base{
 	}
 	
 	@Test
-	public void ResultTest2()
+	public void MavenTest()
 	{
 	Boolean result;
 	try {
-		System.out.print("first test case");
-		result = GoogleSearch.SearchResult("Selenium");
+		
+		result = GoogleSearch.SearchResult("Maven");
 		Assert.assertTrue(result);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	
 	}
 	
 	@AfterMethod
@@ -42,5 +42,4 @@ public class GoogleSearchTest2 extends Base{
 	{
 		driver.quit();
 	}
-	
 }

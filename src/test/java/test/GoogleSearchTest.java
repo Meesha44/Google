@@ -23,7 +23,7 @@ public class GoogleSearchTest extends Base{
 	}
 	
 	@Test
-	public void SearchResultTest()
+	public void SeleniumTest()
 	{
 	Boolean result;
 	try {
@@ -35,6 +35,7 @@ public class GoogleSearchTest extends Base{
 		e.printStackTrace();
 	}
 	}
+	
 	
 	@AfterMethod
 	public void TearDown()
