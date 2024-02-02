@@ -46,7 +46,7 @@ public void Initialization() {
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
 	driver.manage().timeouts().implicitlyWait(implicitelyWait ,TimeUnit.SECONDS);
-	driver.get(prop.getProperty("url"));
+	driver.get(System.getProperty("url"));
 }
 
 }
