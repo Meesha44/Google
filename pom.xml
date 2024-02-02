@@ -10,6 +10,18 @@
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
+  <build>
+     <plugins>
+  <plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>exec-maven-plugin</artifactId>
+		<version>1.6.0</version>
+		<configuration>
+			<mainClass>com.journaldev.maven.utils.BuildInfo</mainClass>
+		</configuration>
+</plugin>
+     </plugins>
+  </build>
   <dependencies>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
